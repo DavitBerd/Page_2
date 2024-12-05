@@ -59,12 +59,26 @@ button {
   align-items: center;
   gap: 50px;
 }
-
 .div1,
 .div2 {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  position: relative;
+}
+.rectangle{
+  position: absolute;
+  width: 255px;
+  height: 240px;
+  background-color: #E8EFF2;
+  border-radius: 8px;
+}
+.rectangle1{
+  left: 93%;
+}
+.rectangle2{
+  right: 93%;
+  top: 50%;
 }
 .div2 {
   display: flex;
@@ -204,7 +218,7 @@ footer {
   padding: 20px;
 }
 
-/* Планшеты */
+
 @media (max-width: 900px) {
   header {
     flex-wrap: wrap;
@@ -262,9 +276,11 @@ footer {
     width: 435px;
     height: 320px;
   }
+  .rectangle{
+    display: none;
+  }
 }
 
-/* Телефоны */
 @media (max-width: 500px) {
     body{
         width: 100%;
@@ -326,5 +342,8 @@ footer {
   }
   .small_2 {
     text-align: center;
+  }
+  .rectangle{
+    display: none;
   }
 }
